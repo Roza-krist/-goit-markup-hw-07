@@ -1,0 +1,60 @@
+.card-set {
+  margin-right: -30px;
+  display: flex;
+  &__feat-item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+.card-set__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.card-set__feat-text {
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.card-set__feat-item {
+  align-items: center;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &::before {
+    content: "";
+    height: 120px;
+    background-position: center;
+    display: block;
+    background-color: var(--bg-color);
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+  }
+}
+.container__svg-set {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-set__feat-item--antenna::before {
+  background-size: 70px;
+  background-image: url(../pictures/antenna.svg);
+}
+.card-set__feat-item--clock::before {
+  background-size: 70px;
+  background-image: url(../pictures/clock.svg);
+}
+.card-set__feat-item--diagram::before {
+  background-size: 70px;
+  background-image: url(../pictures/diagram.svg);
+}
+.card-set__feat-item--astronaut::before {
+  background-size: 70px;
+  background-image: url(../pictures/astronaut.svg);
+}
