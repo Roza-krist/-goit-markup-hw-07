@@ -4,8 +4,7 @@
   background-color: var(--foot-bg-color);
 }
 .container--foot-flex {
-  display: flex;
-  align-items: baseline;
+  @include display(flex, baseline);
   justify-content: space-between;
 }
 .logo--foot {
@@ -18,10 +17,9 @@
   }
 }
 .foot-contacts__link {
+  @include font(14px, 400, 1.46, 0.03em);
   font-style: normal;
   font-family: Roboto;
-  font-size: 14px;
-  line-height: 1.7;
   color: var(--main-bg-color);
 }
 .foot-contacts__link--rgba {
@@ -33,8 +31,7 @@
   &__title {
     color: var(--main-bg-color);
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 700, 1.14, 0.03em);
     margin-bottom: 20px;
   }
 }
@@ -64,24 +61,17 @@
   background-color: transparent;
   color: var(--main-bg-color);
   &::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font(16px, 400, 1.25, 0.03em);
     padding-left: 10px;
   }
 }
 .btn__foot {
-  display: flex;
   margin-top: 0;
   margin-left: 12px;
   padding: 10px 25px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.6;
-  align-items: center;
+  @include font(16px, 700, 1.6, 0.06em);
+  @include display();
   justify-content: center;
-  letter-spacing: 0.06em;
 }
 .btn__mailing-icon {
   width: 24px;

@@ -5,9 +5,7 @@
 .container__main-title {
   margin-top: 0;
   margin-bottom: 50px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font(36px, 700, 1.16, 0.03em);
   text-align: center;
 }
 .card-set__we-do-item {
@@ -18,20 +16,16 @@
 .card-set__we-do-subtitle {
   position: absolute;
   bottom: 0;
-
   width: 100%;
   height: 70px;
   display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 1.14, 0.03em);
   text-transform: uppercase;
 
   text-align: center;
   justify-content: center;
   padding-top: 27px;
   padding-bottom: 27px;
-  letter-spacing: 0.03em;
   color: var(--main-bg-color);
   background-color: rgba(47, 48, 58, 0.8);
 }

@@ -6,19 +6,16 @@
   }
 }
 .card-set__title {
+  @include font(14px, 700, 1.14, 0.03em);
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
   text-transform: uppercase;
 }
 .card-set__feat-text {
   margin-top: 15px;
   margin-bottom: 0;
   color: var(--text-color);
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 400, 1.46, 0.03em);
 }
 .card-set__feat-item {
   align-items: center;

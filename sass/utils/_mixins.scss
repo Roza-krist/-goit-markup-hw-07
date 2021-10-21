@@ -1,0 +1,15 @@
+@mixin font($fz: 14px, $sfw, $slh, $sls: 0.02em) {
+  font-size: sfz;
+  font-weight: sfw;
+  line-height: slh;
+  letter-spacing: sls;
+}
+@mixin display($fl: flex, $ali: center) {
+  display: fl;
+  align-items: ali;
+}
+@mixin bg($bgs: cover, $bgr: no-repeat, $bgp: center) {
+  background-size: bgs;
+  background-repeat: bgr;
+  background-position: bgp;
+} ;

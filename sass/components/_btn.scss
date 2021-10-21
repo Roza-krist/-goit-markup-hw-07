@@ -8,8 +8,5 @@
   padding: 10px 32px;
   max-width: 200px;
   max-height: 50px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.9;
+  @include font(16px, 700, 1.9, 0.06em);
 }
